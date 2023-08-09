@@ -1,0 +1,25 @@
+@import "varuables";
+
+@mixin lg {
+  @media (max-width: #{$extra_large}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$xxxx}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
